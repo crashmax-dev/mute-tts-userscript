@@ -16,9 +16,10 @@
     "sass": "1.59.3",
     "typescript": "4.9.5",
     "vite": "4.1.4",
-    "vite-userscript-plugin": "1.7.0"
+    "vite-userscript-plugin": "1.7.1"
   },
   "dependencies": {
+    "@zero-dependency/storage": "^0.3.0",
     "redom": "3.29.1"
   }
 }

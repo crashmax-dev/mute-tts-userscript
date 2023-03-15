@@ -1,15 +1,21 @@
-import { el, mount } from 'redom'
-import './style.scss'
+import { chatListener } from './chat.js'
+import { Config } from './config/config.js'
 
-const App = el(
-  'div',
-  { className: 'card' },
-  el('h1', { className: 'title' }, 'Hello World'),
-  el(
-    'p',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, ipsa.'
-  ),
-  el('a', { href: 'https://google.com', target: '_blank' }, 'Link')
-)
+window.addEventListener('load', () => {
+  const config = new Config()
+  const { observe } = chatListener(config)
+  const { history } = window
+  const { pushState, replaceState } = history
 
-mount(document.body, App)
+  history.pushState = (...args) => {
+    pushState.apply(history, args)
+    observe()
+  }
+
+  history.replaceState = (...args) => {
+    replaceState.apply(history, args)
+    observe()
+  }
+
+  observe()
+})

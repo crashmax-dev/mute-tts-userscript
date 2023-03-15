@@ -3,13 +3,15 @@ lockfileVersion: 5.4
 specifiers:
   '@crashmax/prettier-config': 3.2.1
   '@crashmax/tsconfig': 2.0.1
+  '@zero-dependency/storage': ^0.3.0
   redom: 3.29.1
   sass: 1.59.3
   typescript: 4.9.5
   vite: 4.1.4
-  vite-userscript-plugin: 1.7.0
+  vite-userscript-plugin: 1.7.1
 
 dependencies:
+  '@zero-dependency/storage': 0.3.0
   redom: 3.29.1
 
 devDependencies:
@@ -18,7 +20,7 @@ devDependencies:
   sass: 1.59.3
   typescript: 4.9.5
   vite: 4.1.4_sass@1.59.3
-  vite-userscript-plugin: 1.7.0_vite@4.1.4
+  vite-userscript-plugin: 1.7.1_vite@4.1.4
 
 packages:
 
@@ -505,6 +507,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@zero-dependency/storage/0.3.0:
+    resolution: {integrity: sha512-tgqExPBuYR4etO+XN38+jH6TG0pxMxOYWtS+U50l2emFb4gn+MhqUQ7TpNxUIPmq/S9GWNyoqUYG9IXTnCfCBw==}
+    dev: false
 
   /ansi-styles/3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}
@@ -1112,8 +1118,8 @@ packages:
       node-gyp-build: 4.6.0
     dev: true
 
-  /vite-userscript-plugin/1.7.0_vite@4.1.4:
-    resolution: {integrity: sha512-vdabSuqC2rxWOia0qxziQrtJoXfejDlIZ4duJcxFafzET9b8MbixzNr7J5sTrslMqN8qQrAmq3Z+fgZTOjYcFg==}
+  /vite-userscript-plugin/1.7.1_vite@4.1.4:
+    resolution: {integrity: sha512-lhOhIGmyRTQttg7tjG53WPY6V3ooSYa3xAQ+HPaAE8v1X4q/uJgc+9UT9lLT1ghQP0Lw4atBKnFb93Drohj8YQ==}
     peerDependencies:
       vite: '>=3.0.0'
     dependencies:
