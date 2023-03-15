@@ -1,7 +1,7 @@
 {
-  "name": "vite-userscript-template",
+  "name": "mute-tts-userscript",
   "private": true,
-  "homepage": "https://crashmax-dev.github.io/vite-userscript-template/",
+  "homepage": "https://crashmax-dev.github.io/mute-tts-userscript/",
   "version": "0.0.1",
   "type": "module",
   "license": "MIT",
